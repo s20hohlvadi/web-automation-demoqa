@@ -23,12 +23,13 @@ public class PracticeFormsPage extends FormsPage{
   public static By SPORTS_CHECKBOX = css("input[id='hobbies-checkbox-1']");
   public static By READING_CHECKBOX = css("input[id='hobbies-checkbox-2']");
   public static By MUSIC_CHECKBOX = css("input[id='hobbies-checkbox-3']");
-  public static By STATE_FIELD = css("div[class='css-1hwfws3']");
-  public static By CITY_FIELD = css("div[class='css-19bqh2r']");
+  public static By STATE_FIELD = css("div[class=' css-1wa3eu0-placeholder']");
+  public static By CITY_FIELD = css("div[class=' css-yk16xz-control']");
   public static By SUBJECTS_MENU;
   // After user clicks submit button, a dialog box containing rows with information is shown to user,
   // find selector for rows only without the first "Title" row. Should be around total of 10.
-  public static By TABLE_ROW;
+  public static By TABLE_ROW = css("div[class='table-row-group']");
+
   public static By DATE_OF_BIRTH = css("input[id='dateOfBirthInput']");
   public static By UPLOAD_PICTURE = css("input[id='uploadPicture']");
   // Public methods ----------------------------------------------------------------------------------------------------

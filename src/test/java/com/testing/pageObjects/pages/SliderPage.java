@@ -12,10 +12,10 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("/slider")
 public class SliderPage extends WidgetsPage {
   // Locators ----------------------------------------------------------------------------------------------------------
-  public static By SLIDER_TITLE;
+  public static By SLIDER_TITLE = text("Slider");
   // Slider ball/ or sldier itself
-  public static By SLIDER_BALL;
-  public static By SLIDER_VALUE;
+  public static By SLIDER_BALL = css("input[class='range-slider range-slider--primary']");
+  public static By SLIDER_VALUE = css("input[id='sliderValue']");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {
     getElement(SLIDER_TITLE).waitUntilPresent();

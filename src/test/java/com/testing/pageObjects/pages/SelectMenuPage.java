@@ -12,13 +12,13 @@ import net.thucydides.core.annotations.DefaultUrl;
 @DefaultUrl("/select-menu")
 public class SelectMenuPage extends WidgetsPage{
   // Locators ----------------------------------------------------------------------------------------------------------
-  public static By SELECT_MENU_TITLE;
-  public static By SELECT_VALUE;
-  public static By SELECT_ONE;
-  public static By OLD_STYLE_SELECT_MENU;
-  public static By MULTISELECT_DROP_DOWN;
+  public static By SELECT_MENU_TITLE = text("Select Menu");
+  public static By SELECT_VALUE = css("div[class=' css-1hwfws3']");
+  public static By SELECT_ONE = css("div[id='selectOne']");
+  public static By OLD_STYLE_SELECT_MENU = css("select[id='oldSelectMenu']");;
+  public static By MULTISELECT_DROP_DOWN = css("div[class=' css-tlfecz-indicatorContainer']");
   // Field containing selected values. Might need an xpath selector
-  public static By MULTISELECT_DROP_DOWN_VALUES;
+  public static By MULTISELECT_DROP_DOWN_VALUES = css("div[class=' css-2b097c-container']");
   public static By VOLVO;
   public static By SAAB;
   public static By OPEL;

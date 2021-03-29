@@ -4,7 +4,7 @@ Feature: DemoQA - Forms page
     Given I am on the "Home" page
     And   I click "Forms"
     Then  I am on the "Forms" page
-  @run
+
   Scenario: Practice form
     When I click "Practice form option"
     And  I set "First name field" to "Leeroy"
