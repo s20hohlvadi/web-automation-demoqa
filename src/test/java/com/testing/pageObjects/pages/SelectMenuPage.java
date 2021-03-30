@@ -16,9 +16,9 @@ public class SelectMenuPage extends WidgetsPage{
   public static By SELECT_VALUE = css("div[class=' css-1hwfws3']");
   public static By SELECT_ONE = css("div[id='selectOne']");
   public static By OLD_STYLE_SELECT_MENU = css("select[id='oldSelectMenu']");;
-  public static By MULTISELECT_DROP_DOWN = css("div[class=' css-tlfecz-indicatorContainer']");
+  public static By MULTISELECT_DROP_DOWN = css("#selectMenuContainer > div:nth-child(7) > div > div > div > div.css-1hwfws3");
   // Field containing selected values. Might need an xpath selector
-  public static By MULTISELECT_DROP_DOWN_VALUES = css("div[class=' css-2b097c-container']");
+  public static By MULTISELECT_DROP_DOWN_VALUES = css("div[class='css-12jo7m5']");
   public static By VOLVO;
   public static By SAAB;
   public static By OPEL;

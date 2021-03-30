@@ -12,13 +12,13 @@ public class AutoCompletePage extends WidgetsPage{
   // Locators ----------------------------------------------------------------------------------------------------------
   public static By AUTO_COMPLETE_TITLE = text("Auto Complete");
   // Element to which you would send keystrokes
-  public static By MULTIPLE_COLOR_FIELD = css("div[class=' css-2b097c-container']");
+  public static By MULTIPLE_COLOR_FIELD = css("div[class='css-1g6gooi']");
   // Element containing the information about actual values
-  public static By MULTIPLE_COLOR_CONTAINER = text("div[class='css-1rhbuit-multiValue auto-complete__multi-value']");
+  public static By MULTIPLE_COLOR_CONTAINER = css("div[id='autoCompleteMultipleContainer']");
   // Element to which you would send keystrokes
   public static By SINGLE_COLOR_FIELD = css("input[id='auto-complete__input']");
   // Element containing the information about actual values
-  public static By SINGLE_COLOR_CONTAINER = css("div[id=autoCompleteMultipleContainer']");
+  public static By SINGLE_COLOR_CONTAINER = css("div[id=autoCompleteSingle']");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {
     getElement(AUTO_COMPLETE_TITLE).waitUntilPresent();

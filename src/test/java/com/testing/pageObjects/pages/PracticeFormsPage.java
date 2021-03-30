@@ -28,7 +28,8 @@ public class PracticeFormsPage extends FormsPage{
   public static By SUBJECTS_MENU;
   // After user clicks submit button, a dialog box containing rows with information is shown to user,
   // find selector for rows only without the first "Title" row. Should be around total of 10.
-  public static By TABLE_ROW = css("div[class='table-row-group']");
+  public static By TABLE_ROW = css("body > div.fade.modal.show > div > div > div.modal-body > div > table > tbody > tr:nth-child(1) > td:nth-child(2)");
+
 
   public static By DATE_OF_BIRTH = css("input[id='dateOfBirthInput']");
   public static By UPLOAD_PICTURE = css("input[id='uploadPicture']");
