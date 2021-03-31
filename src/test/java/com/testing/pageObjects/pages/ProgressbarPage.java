@@ -12,7 +12,7 @@ public class ProgressbarPage extends WidgetsPage{
   // Locators ----------------------------------------------------------------------------------------------------------
   public static By PROGRESS_BAR_TITLE = text("Progress Bar");
   public static By START_STOP_BUTTON = css("button[id='startStopButton']");
-  public static By PROGRESS_BAR = css("div[class='progress-bar bg-info']");
+  public static By PROGRESS_BAR = id("progressBar");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {
     getElement(PROGRESS_BAR_TITLE).waitUntilPresent();

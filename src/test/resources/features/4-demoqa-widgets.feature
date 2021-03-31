@@ -53,7 +53,7 @@ Feature: DemoQA - Widgets
     Then I see "Slider value" with the following data:
       | Value |
       | 40    |
-
+  @run
   Scenario: Progress bar
     When I click "Progress bar option"
     And  I set "Progress bar" to "44"
