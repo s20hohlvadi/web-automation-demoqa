@@ -14,7 +14,7 @@ public class SliderPage extends WidgetsPage {
   // Locators ----------------------------------------------------------------------------------------------------------
   public static By SLIDER_TITLE = text("Slider");
   // Slider ball/ or sldier itself
-  public static By SLIDER_BALL = css("#sliderContainer > div.col-9 > span > div > div.range-slider__tooltip__label");
+  public static By SLIDER_BALL = css("#sliderContainer > div.col-9 > span > input");
   public static By SLIDER_VALUE = id("sliderValue");
   // Public methods ----------------------------------------------------------------------------------------------------
   public void waitForPageToLoad() {

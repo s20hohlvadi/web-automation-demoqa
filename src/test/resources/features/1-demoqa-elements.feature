@@ -62,3 +62,37 @@ Feature: DemoQA - Elements page
     Then "Right click message" should be "visible"
     When I click "Click me button"
     Then "Dynamic click message" should be "visible"
+  @run
+    Scenario: Links
+      When I click "Links option"
+      And I click "Created link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 201 and status text Created"
+      When I click "No Content link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 204 and status text No Content"
+      When I click "Moved link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 301 and status text Moved Permanently"
+      When I click "Bad Request link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 400 and status text Bad Request"
+      When I click "Unauthorized link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 401 and status text Unauthorized"
+      When I click "Forbidden link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 403 and status text Forbidden"
+      When I click "Not Found link"
+      Then "Response" should be "visible"
+      And "Response" should contain "Link has responded with staus 404 and status text Not Found"
+      When I click "Home link"
+      Then I switch to new tab
+      When I am on the "Home" page
+      And   I click "Elements"
+      And I click "Links option"
+      And I click "Dynamic Home link"
+      And I switch to new tab
+      Then I am on the "Links" page
+
+

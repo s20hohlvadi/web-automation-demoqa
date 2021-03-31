@@ -42,7 +42,7 @@ Feature: DemoQA - Widgets
     Then I see "Select date and time value" with the following data:
       | Value                  |
       | March 28, 2018 9:00 PM |
-  @run
+
   Scenario: Slider
     When I click "Slider option"
     And  I set "Slider ball" to "10"

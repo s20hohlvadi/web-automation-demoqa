@@ -24,6 +24,9 @@ public class PageContainer{
     pages.put("RADIO_BUTTON_PAGE", new RadioButtonPage());
     pages.put("WEB_TABLES_PAGE", new WebTablesPage());
     pages.put("BUTTONS_PAGE", new ButtonsPage());
+
+    pages.put("LINKS_PAGE", new LinksPage());
+
     pages.put("FORMS_PAGE", new FormsPage());
     pages.put("PRACTICE_FORMS_PAGE", new PracticeFormsPage());
     pages.put("ALERTS_FRAME_AND_WINDOWS_PAGE", new AlertsFrameAndWindowsPage());
