@@ -13,7 +13,7 @@ Feature: DemoQA - Widgets
     Then "Content" should contain "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text"
     When I click "Section one heading"
     Then "Content" should contain "It was popularised in the 1960s with the release of Letraset sheets"
-
+  @run
   Scenario: Auto Complete
     When I click "Auto complete option"
     And  I set "Multiple color field" to "Red"
@@ -53,7 +53,7 @@ Feature: DemoQA - Widgets
     Then I see "Slider value" with the following data:
       | Value |
       | 40    |
-  @run
+
   Scenario: Progress bar
     When I click "Progress bar option"
     And  I set "Progress bar" to "44"
